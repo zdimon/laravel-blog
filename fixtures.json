@@ -1,0 +1,46 @@
+{
+    "pages": [
+        {
+            "title": "Test title 1",
+            "content": "Test content 1",
+            "image": "image1.jpg"
+        }, 
+        {
+            "title": "Test title 2",
+            "content": "Test content 2",
+            "image": "image2.jpg"
+        }        
+    ],
+    "categories": [
+        {
+            "name": "PHP"
+        }, 
+        {
+            "name": "Python"
+        }, 
+        {
+            "name": "Javascript"
+        }    
+    ],
+
+    "posts": [
+        {
+            "title": "Title about PHP",
+            "image": "image_post1.jpeg",
+            "content": "Content about PHP",
+            "category": "PHP"
+        }, 
+        {
+            "title": "Title about Python",
+            "image": "image_post1.jpeg",
+            "content": "Content about Python",
+            "category": "Python"
+        }, 
+        {
+            "title": "Title about Javascript",
+            "image": "image_post1.jpeg",
+            "content": "Content about Javascript",
+            "category": "Javascript"
+        }    
+    ]
+}
