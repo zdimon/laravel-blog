@@ -26,5 +26,9 @@ Route::post('/login', function (Request $request) {
 
 
 Route::get('/', 'IndexController@index');
-
 Route::resource('page','PageController');
+
+Route::get('/filter/{id}', 'FilterController@index');
+
+
+

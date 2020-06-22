@@ -27,19 +27,37 @@
 
     "posts": [
         {
-            "title": "Title about PHP",
+            "title": "Title about PHP 1",
             "image": "1.png",
             "content": "Content about PHP",
             "category": "PHP"
         }, 
         {
-            "title": "Title about Python",
+            "title": "Title about Python 1",
             "image": "2.png",
             "content": "Content about Python",
             "category": "Python"
         }, 
         {
-            "title": "Title about Javascript",
+            "title": "Title about Javascript 1",
+            "image": "3.png",
+            "content": "Content about Javascript",
+            "category": "Javascript"
+        },
+        {
+            "title": "Title about PHP 2",
+            "image": "1.png",
+            "content": "Content about PHP",
+            "category": "PHP"
+        }, 
+        {
+            "title": "Title about Python 2",
+            "image": "2.png",
+            "content": "Content about Python",
+            "category": "Python"
+        }, 
+        {
+            "title": "Title about Javascript 2",
             "image": "3.png",
             "content": "Content about Javascript",
             "category": "Javascript"

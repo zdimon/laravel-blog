@@ -84,12 +84,15 @@
 
                 <aside class="list music aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Categories</h2>
+                        <h2 class="heading">Категории</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class="fa fa-headphones"></i> <a href="#">Python</a></li>
-                                <li><i class="fa fa-headphones"></i> <a href="#">Javascript</a></li>
-                                <li><i class="fa fa-headphones"></i> <a href="#">PHP</a></li>
+                                @foreach ($categories as $category)
+                                    <li><i class="fa fa-headphones"></i> 
+                                    <a href="/filter/{{ $category->id }}">
+                                        {{ $category->name }}
+                                    </a></li>
+                                @endforeach
                             </ul>
                         </div><!--//content-->
                     </div><!--//section-inner-->
@@ -97,11 +100,19 @@
                 
                 <aside class="blog aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Latest Blog Posts</h2>
-                        <p>You can use Sascha Depold's <a href="https://github.com/sdepold/jquery-rss" target="_blank">jQuery RSS plugin</a> to pull in your blog post feeds.</p>
-                        <div id="rss-feeds" class="content">
-
-                        </div><!--//content-->
+                        <h2 class="heading">Последние посты</h2>
+                        @foreach ($last_posts as $post)
+                            <div id="rss-feeds" class="content">
+                                <div class="item">
+                                    <h3 class="title" style="">
+                                        <a target="_blank">
+                                            {{ $post->title }}
+                                        </a>
+                                    </h3>
+                                    
+                                </div>           
+                            </div><!--//content-->
+                        @endforeach
                     </div><!--//section-inner-->
                 </aside><!--//section-->
                 
@@ -131,7 +142,7 @@
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
     <script type="text/javascript" src="/assets/plugins/github-activity/src/github-activity.js"></script>
     <!-- custom js -->
-    <script type="text/javascript" src="/assets/js/main.js"></script>            
+          
 </body>
 </html> 
 
