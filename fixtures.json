@@ -1,14 +1,16 @@
 {
     "pages": [
         {
-            "title": "Test title 1",
-            "content": "Test content 1",
-            "image": "logo.jpg"
+            "title": "Dmitry Zharikov",
+            "content": "Full stack developer",
+            "image": "logo.jpg",
+            "alias": "header"
         }, 
         {
-            "title": "Test title 2",
-            "content": "Test content 2",
-            "image": "image2.jpg"
+            "title": "About me",
+            "content": "PHP Python Javascript developer",
+            "image": "my.jpg",
+            "alias": "about_me"
         }        
     ],
     "categories": [

@@ -19,9 +19,13 @@ class PageSeeder extends Seeder
             echo "Inserting ".$item->title."\n";
             DB::table('page')->insert([
                 'title' => $item->title,
+                'alias' => $item->alias,
                 'content' => $item->content,
                 'image' => $item->image
             ]);
+            $file_path = base_path().'/fixture-data/images/pages/'.$item->image;
+            $destination = base_path().'/public/storage/pages/'.$item->image;
+            \File::copy($file_path,$destination);
         }
 
     }

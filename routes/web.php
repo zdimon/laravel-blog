@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use \Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,8 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('layout');
-// });
+Route::get('/auth', function () {
+    return view('auth');
+});
+
+Route::post('/login', function (Request $request) {
+    if($request->input('password') == '111') {
+        $request->session()->put('is_auth', 'true');
+    }
+    return redirect('/');
+});
+
 
 Route::get('/', 'IndexController@index');
+
+Route::resource('page','PageController');
