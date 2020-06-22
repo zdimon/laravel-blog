@@ -27,6 +27,10 @@ class PostSeeder extends Seeder
                 'image' => $item->image,
                 'category_id' => $cat->id
             ]);
+            $file_path = base_path().'/fixture-data/images/posts/'.$item->image;
+            $destination = base_path().'/public/storage/posts/'.$item->image;
+            \File::copy($file_path,$destination);
+
         }
     }
 }

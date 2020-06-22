@@ -3,7 +3,7 @@
         {
             "title": "Test title 1",
             "content": "Test content 1",
-            "image": "image1.jpg"
+            "image": "logo.jpg"
         }, 
         {
             "title": "Test title 2",
@@ -26,19 +26,19 @@
     "posts": [
         {
             "title": "Title about PHP",
-            "image": "image_post1.jpeg",
+            "image": "1.png",
             "content": "Content about PHP",
             "category": "PHP"
         }, 
         {
             "title": "Title about Python",
-            "image": "image_post1.jpeg",
+            "image": "2.png",
             "content": "Content about Python",
             "category": "Python"
         }, 
         {
             "title": "Title about Javascript",
-            "image": "image_post1.jpeg",
+            "image": "3.png",
             "content": "Content about Javascript",
             "category": "Javascript"
         }    
